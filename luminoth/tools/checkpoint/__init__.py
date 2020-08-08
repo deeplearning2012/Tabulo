@@ -45,6 +45,7 @@ def get_checkpoint_path(checkpoint_id):
 def read_checkpoint_db():
     """Reads the checkpoints database file from disk."""
     path = os.path.join(get_checkpoints_directory(), CHECKPOINT_INDEX)
+    print(path)
     if not os.path.exists(path):
         return {'checkpoints': []}
 
