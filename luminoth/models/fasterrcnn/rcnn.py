@@ -187,6 +187,7 @@ class RCNN(snt.AbstractModule):
             # "memory-friendly" Tensor.
             features = tf.reduce_mean(features, [1, 2])
 
+        print(features)
         # We treat num proposals as batch number so that when flattening we
         # get a (num_proposals, flatten_pooled_feature_map_size) Tensor.
         flatten_features = tf.contrib.layers.flatten(features)
