@@ -174,7 +174,7 @@ var objects = "Volvo";
     const th = document.getElementById('prob-threshold')
 
     var formdata = new FormData(form)
-    formdata.append("th", 100)
+    formdata.append("th", th)
     const url = '/api/fasterrcnn/extract/'
 
     const xhr = new XMLHttpRequest()
